@@ -2,7 +2,6 @@ Maggie-server
 =============
 
 Maggie-server is...
-Server implementation currently being written here. Contributions welcome!
 
 Contributing
 ------------
