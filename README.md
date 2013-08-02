@@ -6,7 +6,10 @@ Maggie-server is...
 Contributing
 ------------
 
-Fork the repo and send a pull request of your new feature / branch. If you add a considerable amount of code,
+Insiders: Create a branch (e.g. feature/controller/cpanel_login), commit to the branch, then push the branch to maggie-server's
+repo and request a pull-request.
+
+Outsiders: Fork the repo and send a pull request of your new feature / branch. If you add a considerable amount of code,
 please include a test. OOP and Design Patterns if possible.
 
 Install
