@@ -9,12 +9,6 @@ Contributing
 Fork the repo and send a pull request of your new feature / branch. If you add a considerable amount of code,
 please include a test. OOP and Design Patterns if possible.
 
-Tech
-----
-
-+ Server side: PHP5 + MySQL
-+ Client side: HTML5 + CSS + JavaScript
-
 Install
 -------
 
