@@ -3,6 +3,8 @@ Maggie-server
 
 Maggie-server is...
 
+[![Build Status](https://travis-ci.org/adriancdperu/maggie-server.png)](https://travis-ci.org/adriancdperu/maggie-server)
+
 Contributing
 ------------
 
