@@ -1,3 +1,5 @@
 [user]
 	name = adib007
 	email = adibastronomer@aol.com
+[push]
+	default = matching
