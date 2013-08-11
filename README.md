@@ -40,6 +40,10 @@ Push an existing repository from the command line:
     $ git remote add origin git@github.com:adriancdperu/maggie-server.git
     $ git push -u origin master
 
+Tech
+----
+
++ Ruby 1.9.3 / Rails 4.0 / AWS
 
 Structure
 ---------
