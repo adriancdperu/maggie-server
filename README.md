@@ -40,6 +40,10 @@ Push an existing repository from the command line:
     $ git remote add origin git@github.com:adriancdperu/maggie-server.git
     $ git push -u origin master
 
+Tech
+----
+
++ Ruby 1.9.3 / Rails 4.0 / AWS
 
 Structure
 ---------
@@ -57,3 +61,8 @@ Structure
 + test/	Unit tests, fixtures, and other test apparatus.
 + tmp/	Temporary files (like cache, pid and session files)
 + vendor/	A place for all third-party code. In a typical Rails application, this includes Ruby Gems and the Rails source code.
+
+By
+--
+
+CS TEAM
