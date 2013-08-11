@@ -61,3 +61,8 @@ Structure
 + test/	Unit tests, fixtures, and other test apparatus.
 + tmp/	Temporary files (like cache, pid and session files)
 + vendor/	A place for all third-party code. In a typical Rails application, this includes Ruby Gems and the Rails source code.
+
+By
+--
+
+CS TEAM
