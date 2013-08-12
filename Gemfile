@@ -39,7 +39,51 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
+
+# Heroku
+group :heroku do
+  gem 'thin'
+end
+
+# A simple model based ruby authentication solution.
+gem 'authlogic'
+
+# This library allows for the identification of a file's likely MIME content type.
+gem 'mime-types', :require => 'mime/types'
+
+# Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks
+gem 'carrierwave', '0.6.1'
+
+# Ruby bindings for the SQLite3 embedded database
+group :development do
+  gem 'sqlite3-ruby'
+end
+
+# MySQL:
+gem 'mysql2'
+
+# PostgreSQL:
+gem 'pg'
+
+# -- Cloud storage
+# AWS S3 support. Can be disabled if using local file system instead of cloud storage.
+gem 'fog'
+
+# -- Photo resizing
+# MiniMagick
+gem "mini_magick"
+
+# ImageMagick:
+gem "rmagick", :require => 'RMagick'
+
+# FreeImage:
+gem "RubyInline"
+gem "image_science", :git => 'git://github.com/perezd/image_science.git'
+
+# -- EXIF
+# Mini exif tool. Can be disabled. Remove exif_read and exif_write filters in photo model
+gem "mini_exiftool_vendored"
