@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'mysql'
+
+gem 'mysql2'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
