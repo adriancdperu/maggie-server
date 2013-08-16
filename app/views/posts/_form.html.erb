@@ -11,16 +11,21 @@
   </div>
   <% end %>
   <p>
-    <%= f.label :title %><br>
+    <%= f.label "Item name" %><br>
     <%= f.text_field :title %>
   </p>
  
   <p>
-    <%= f.label :text %><br>
+    <%= f.label "Photo url" %><br>
     <%= f.text_area :text %>
   </p>
  
   <p>
+    <%= f.label "Item url" %><br>
+    <%= f.text_field :url %>
+  </p>
+  
+<p>
     <%= f.submit %>
   </p>
 <% end %>
