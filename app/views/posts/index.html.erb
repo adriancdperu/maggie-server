@@ -1,0 +1,22 @@
+<style type="text/css">
+  #float { float : left ; margin: 20px}
+  #marquee { font-weight : bold ; background-color : red ; height: 30px ; font-size : 20pt; color: #00FFFF }  
+</style>
+
+<marquee behavior="scroll" id="marquee">Welcome to Hitome!!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Click on the item you like or just post a new item! </marquee>
+<h1>Hitome</h1>
+
+<%= link_to 'New post', new_post_path %>
+<br />
+<br />
+<br />
+
+<% @posts.each do |post| %>
+<div id="float">
+    <%= link_to (image_tag post.text , size: "270x270") , post_path(post) %><br />
+    <%= post.title %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <%= link_to 'Show', post_path(post) %> &nbsp;
+    <%= link_to 'Comment', post_path(post) %> &nbsp;
+    <%= link_to 'Edit', edit_post_path(post) %><br />
+</div>
+<% end %>
