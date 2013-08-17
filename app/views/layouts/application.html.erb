@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
+
+<div id="user_nav">
+
+<% if user_signed_in? %>
+  Signed in as <%= current_user.email %> Not you?
+  <%= link_to "Sign out", destroy_user_session_path %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path %> Or <%= link_to "Sign in", new_user_session_path %>
+<% end %>
+</div> 
+
 <div id="container">
 
 <div id="content">
 	<p id="notice"><%= flash[:notice] %></p>
 	<%= yield %>
 </div>
-
-  
 </div>
-</div>
-
 <%= javascript_include_tag 'jquery-1.4.2.js', 'rails', 'jquery_ujs' %>
 <%= yield :javascript %>
 </body>

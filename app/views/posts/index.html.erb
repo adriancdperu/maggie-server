@@ -13,7 +13,7 @@
 
 <% @posts.each do |post| %>
 <div id="float">
-    <%= link_to (image_tag post.text , size: "270x270") , post.url %><br />
+    <%= link_to (image_tag post.text , size: "270x270") , post_path(post) %><br />
     <%= post.title %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <%= link_to 'Show', post_path(post) %> &nbsp;
     <%= link_to 'Comment', post_path(post) %> &nbsp;

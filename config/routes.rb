@@ -1,4 +1,5 @@
 MaggieServer::Application.routes.draw do
+  devise_for :users
   get "welcome/first_page"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -14,11 +15,12 @@ MaggieServer::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :posts
-  
+  resources :users  
   resources :posts do
     resources :comments
   end
-  # Example resource route with options:
+  
+# Example resource route with options:
   #   resources :products do
   #     member do
   #       get 'short'
