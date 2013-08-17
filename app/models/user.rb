@@ -1,5 +1,3 @@
 class User < ActiveRecord::Base
-  acts_as_authentic
-  acts_as_permissible
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
 end
-
