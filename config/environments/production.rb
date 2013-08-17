@@ -1,6 +1,7 @@
 MaggieServer::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.action_mailer.default_url_options = { :host => '54.213.72.218' , :port => 3000 }
   # Code is not reloaded between requests.
   config.cache_classes = true
 
