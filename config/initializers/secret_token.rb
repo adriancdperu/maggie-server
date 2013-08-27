@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-MaggieServer::Application.config.secret_key_base = 'b45557e05c025047515bac0860e6ead310098c9422f6f918525b03adea2bab8f2208e4c6acef76321f7148095084a30b62cb66618755074bbabbc58b6a02ff08'
+MaggieServer::Application.config.secret_key_base = 'c9c4e7518797283fe0017d2add6ffe65ed95bb06e585f37270827ef38149f7d7d6ede66a155dfdf2b30f1f46a5a3eeb3aaf88f7b914b4b42abfa97a75889fe60'
