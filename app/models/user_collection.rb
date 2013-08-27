@@ -6,11 +6,9 @@ class UserCollection < ActiveRecord::Base
     has_many :lists
     has_many :hashtags, :through => :items
 
-    validates :path, :presence => true, :uniqueness => true #, :message =>
-        "item  already exists"
+    validates :path, :presence => true, :uniqueness => true #, :message => "item  already exists"
     validates :title :presence => true #, :message => "item title is nonempty"
-    validates :description :presence => true #, :message => "item description is
-nonempty"
+    validates :description :presence => true #, :message => "item description is nonempty"
 
     before_validation :ensure_path, :set_title
     after_create :create_folders
@@ -36,8 +34,7 @@ nonempty"
     end
 
     def set_title
-        self.title = File.basename(self.path).titleize unless self.title ||
-!self.path
+        self.title = File.basename(self.path).titleize unless self.title || !self.path
     end
 
     #TODO
