@@ -9,9 +9,9 @@ class CreateItem < ActiveRecord::Migration
             t.status  :integer
             t.boolean :is_buyable
             t.boolean :is_ours
-	    t.integer :created_at
-	    t.integer :updated_at
-	    t.integer :deleted_at
+            t.integer :created_at
+            t.integer :updated_at
+            t.integer :deleted_at
 
             t.timestamps
         end
