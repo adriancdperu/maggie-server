@@ -74,6 +74,7 @@ gem 'pg'
 gem 'fog'
 
 # -- Photo resizing
+
 # MiniMagick
 gem "mini_magick"
 
@@ -83,6 +84,14 @@ gem "rmagick", :require => 'RMagick'
 # FreeImage:
 gem "RubyInline"
 gem "image_science", :git => 'git://github.com/perezd/image_science.git'
+
+
+# -- Bootstrap
+
+# anjlab-bootstrap-rails project integrates Bootstrap CSS (with Sass flavour)
+# and JS toolkits for Rails 3/4 projects:
+gem 'anjlab-bootstrap-rails',   :require => 'bootstrap-rails',
+                                :github => 'anjlab/bootstrap-rails'
 
 # -- EXIF
 # Mini exif tool. Can be disabled. Remove exif_read and exif_write filters in photo model
