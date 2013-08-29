@@ -84,6 +84,18 @@ gem "rmagick", :require => 'RMagick'
 gem "RubyInline"
 gem "image_science", :git => 'git://github.com/perezd/image_science.git'
 
+# bootstrap for Rails and other front-side resources:
+
+# bootstrap is a toolkit from Twitter designed to kickstart development of
+# webapps and sites. It includes base CSS and HTML for typography, forms,
+# buttons, tables, grids, navigation, and more.
+gem 'libv8', '~> 3.11.8' 
+gem 'less-rails' # Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+    # latest build
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'formtastic'
+gem 'formtastic-bootstrap'
+
 # -- EXIF
 # Mini exif tool. Can be disabled. Remove exif_read and exif_write filters in photo model
 gem "mini_exiftool_vendored"
