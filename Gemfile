@@ -74,6 +74,7 @@ gem 'pg'
 gem 'fog'
 
 # -- Photo resizing
+
 # MiniMagick
 gem "mini_magick"
 
@@ -84,17 +85,13 @@ gem "rmagick", :require => 'RMagick'
 gem "RubyInline"
 gem "image_science", :git => 'git://github.com/perezd/image_science.git'
 
-# bootstrap for Rails and other front-side resources:
 
-# bootstrap is a toolkit from Twitter designed to kickstart development of
-# webapps and sites. It includes base CSS and HTML for typography, forms,
-# buttons, tables, grids, navigation, and more.
-gem 'libv8', '~> 3.11.8' 
-gem 'less-rails' # Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-    # latest build
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-gem 'formtastic'
-gem 'formtastic-bootstrap'
+# -- Bootstrap
+
+# anjlab-bootstrap-rails project integrates Bootstrap CSS (with Sass flavour)
+# and JS toolkits for Rails 3/4 projects:
+gem 'anjlab-bootstrap-rails',   :require => 'bootstrap-rails',
+                                :github => 'anjlab/bootstrap-rails'
 
 # -- EXIF
 # Mini exif tool. Can be disabled. Remove exif_read and exif_write filters in photo model
