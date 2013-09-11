@@ -15,6 +15,7 @@ MaggieServer::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :posts
+  resources :welcome
   resources :users  
   resources :posts do
     resources :comments

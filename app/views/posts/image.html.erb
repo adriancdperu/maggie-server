@@ -1,0 +1,12 @@
+<style type="text/css">
+  #float { float : left ; margin: 20px}
+</style>
+<h1>post item</h1>
+
+<% @img.each do |image_url| %>
+<div id="float">
+    <%= link_to (image_tag image_url , size: "270x270") , posts_path(:text => image_url) %><br />
+</div>
+<% end %>
+
+<%= link_to 'Back', posts_path %>

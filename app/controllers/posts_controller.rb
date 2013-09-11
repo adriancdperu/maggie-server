@@ -1,17 +1,34 @@
 class PostsController < ApplicationController
   before_filter :authenticate_user!
+  require 'nokogiri'
+  require 'open-uri'
+
   def new
     @post = Post.new
   end
 
+  def image
+    
+  end 
+
   def create
     @post = Post.new(params[:post].permit(:title, :text, :url))
-
+if !@post.text.nil?
     if @post.save
       redirect_to @post
-    else
-      render 'new'
-    end	
+    end 
+else 
+#    @post = Post.new(params[:post].permit(:url))
+
+ #   if @post.save
+ #     redirect_to @post
+    page = Nokogiri::HTML(open(@post.url))
+    @img = page.css('img').map{ |i| i['src'] }
+      render 'image', :locals => {:url => @img}  
+end
+ #   else
+ #     render 'new'
+ #   end	
   end
 
   def show

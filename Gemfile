@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'nokogiri'
+
+gem 'hpricot'
+
+gem 'mechanize'
+
 gem 'devise'
 
 gem 'mysql'
