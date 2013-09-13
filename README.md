@@ -3,6 +3,8 @@ Maggie-server
 
 Maggie-server is...
 
+![alt maggie](http://inmobiliariadelperu.com/temp0230/maggie001.jpg)
+
 [![Build Status](https://travis-ci.org/adriancdperu/maggie-server.png)](https://travis-ci.org/adriancdperu/maggie-server)
 
 Contributing
